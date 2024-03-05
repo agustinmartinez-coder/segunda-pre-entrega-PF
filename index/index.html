@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type =" text /x-handlebars-template" id="index">
+        <div> tienda {{{ name }}}</div>
+        
+    </script>
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" >
+    </script>
+    <script type="text /javascript">
+        let template = document .getElementById('index') .innerHTML;
+        console.log(template);
+        let compile = handlebars .compile (template);
+        let compiledHTML = compile ({name : la meca});
+        document.getElementById('action').innerHTML += compiledHTML;
+    </script>
+</body>
+</html>
